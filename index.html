@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🤎 Nutella 🤎</title>
+  </head>
+  <style>
+    .headBox { margin: 0 auto;
+      border: 5px solid rgb(255, 250, 238);
+      background: transparent;
+      opacity: 80%;
+      text-align: center;
+      border-radius: 20px;
+      width: 700px;
+    }
+    h1 {
+      color: #371E14;
+      letter-spacing: 3px;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 30px;
+      font-family: sans-serif ;
+    }
+    .utella { color: red;
+      display: inline;
+    }
+    h2 { color: #684a3e;
+      text-align: center;
+      font-family: sans-serif ;
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+    h3 { color: #684a3e;
+      margin-top: 20px;
+      text-align: center;
+      font-family: sans-serif ;
+      font-size: 25px;
+    }
+    .lineStyle { color: #fcf7ec;
+      border: 1px solid;
+      width: 800px;
+      
+    }
+    img {
+      display: block;
+      margin: 40px auto;
+      width: 400px;
+      padding: 0;
+      border: 7px solid #fcf7ec;
+      border-radius: 10px;
+    }
+    body { background: linear-gradient(50deg, #fffaf5, #f1caba);
+      margin:60px auto;
+    }
+    p { display: block;
+      color: #371E14;
+      font-weight: lighter;
+      text-align: center;
+      font-family: sans-serif ;
+      margin: 20px 20px 20px 20px;
+      padding: 10px 600px;
+      font-size: 18px;
+      line-height: 40px;
+    }
+    .recipe {font-size: 20px;
+      color:saddlebrown;
+      font-weight: bold;
+      text-decoration: none;
+      text-shadow: 1px 1px #fff4d6;
+  }
+    .recipe:hover { color:#c57908; 
+      text-decoration: underline;
+      transition: all 180ms ease-in;
+    }
+    button { display: block;
+      margin: auto;
+      color: rgb(252, 249, 229);
+      font-family: sans-serif ;
+      font-size: 18px;
+      width: 150px;
+      height: 37px;
+      background: #8f5944;
+      border-radius: 10px;
+      border: 2px solid ;
+      box-shadow: 2px 2px 2px 2px rgba(80, 79, 79, 0.4);
+    }
+    .purchase:hover { background: transparent;
+      color: #7c502c;  
+      transition: all 200ms ease-in;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <div class="headBox">
+  <h1>N<span><h1 class ="utella">UTELLA</span>
+  </h1>
+  <h2>🍞🍞 Seriously, how good is bread and Nutella? 🍞🍞</h2>
+  </div>
+  <img
+    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/040/original/nutella.jpg?1686369393" alt="nutella jar"
+  />
+  <h3>History of Nutella</h3>
+  <hr class="lineStyle">
+  <p>
+    <em>In the autumn of 1945 or early 1946,</em> Ferreros Pietro, a pastry chef in
+    Turin, found on a shelf a forgotten jar of cocoa butter. He added it to the
+    mixture and created the Pasta Gianduja (or Giandujot), which was then
+    packaged in the form of a small loaf, wrapped in tin foil, cut it into
+    slices and sold at cheap prices. The ingredients were more or less those of
+    today: sugar, hazelnuts, cocoa and vegetable fats. In stores the Giandujot
+    cost 4-5 times less than traditional chocolate. <br>
+    <em>On April 20 1964 the first
+    jar of Nutella came out from the Ferrero factory in Alba.</em> Its origins, date
+    back to the 1940s and before. At least from the 1920s the Ferreros Pietro
+    had pursued a recipe of an inexpensive chocolate snack to be eaten with
+    bread. Pietro Ferrero used to watch workers go to their factories bringing
+    bread with tomatoes and cheese for a meal. He thought that if he could give
+    those workers something sweet and inexpensive to eat with bread, he would
+    hit a jackpot. <br>
+    <em>Nowadays, Nutella has become the best-selling spreadable
+    cream in the world,</em> with a production of 365,000 tons per year. Ferrero
+    created the catchy name from the English noun <strong>'NUT"</strong>, or
+    hazelnut, and the Italian suffix <strong>"-ELLA"</strong>, that is an
+    alteration of the noun expressing affection and a positive judgment.
+    <br/>
+    Here is one of the easiest nutella recipes you can make at home 🍪🍪🍪👉👉👉 <a href= "https://www.youtube.com/watch?v=Z0HcgDuvuiA&t=25s" class="recipe" target="_blank"> Nutella cookie recipe </a>
+     <br/>
+  </p>
+  <button class="purchase">Buy Nutella!</button>
+  <script>
+    function buyNutella() {
+      let name = prompt("Hi there, what is you name?");
+      let allergy = prompt("Are you allergic to nuts or soy?").toLowerCase();
+  if (allergy === "yes") {
+    alert("Sorry, " + name + " , Nutella contains nuts and soy 😔");
+  } else {
+    let email = prompt("What is your email?");
+    alert("Thanks, " + name + ", We'll contact you soon 😊");
+  }
+    }
+  let buyButton = document.querySelector("button")
+  buyButton.addEventListener("click", buyNutella);
+  </script>
+  </html>
+  </body>
+</html>
